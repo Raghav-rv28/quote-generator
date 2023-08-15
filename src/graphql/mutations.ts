@@ -2,48 +2,42 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const createQuoteAppData = /* GraphQL */ `
-  mutation CreateQuoteAppData(
-    $input: CreateQuoteAppDataInput!
-    $condition: ModelQuoteAppDataConditionInput
+export const onCreateQuoteAppData = /* GraphQL */ `
+  subscription OnCreateQuoteAppData(
+    $filter: ModelSubscriptionQuoteAppDataFilterInput
   ) {
-    createQuoteAppData(input: $input, condition: $condition) {
+    onCreateQuoteAppData(filter: $filter) {
       id
       queryName
       quotesGenerated
       createdAt
       updatedAt
-      __typename
     }
   }
 `;
-export const updateQuoteAppData = /* GraphQL */ `
-  mutation UpdateQuoteAppData(
-    $input: UpdateQuoteAppDataInput!
-    $condition: ModelQuoteAppDataConditionInput
+export const onUpdateQuoteAppData = /* GraphQL */ `
+  subscription OnUpdateQuoteAppData(
+    $filter: ModelSubscriptionQuoteAppDataFilterInput
   ) {
-    updateQuoteAppData(input: $input, condition: $condition) {
+    onUpdateQuoteAppData(filter: $filter) {
       id
       queryName
       quotesGenerated
       createdAt
       updatedAt
-      __typename
     }
   }
 `;
-export const deleteQuoteAppData = /* GraphQL */ `
-  mutation DeleteQuoteAppData(
-    $input: DeleteQuoteAppDataInput!
-    $condition: ModelQuoteAppDataConditionInput
+export const onDeleteQuoteAppData = /* GraphQL */ `
+  subscription OnDeleteQuoteAppData(
+    $filter: ModelSubscriptionQuoteAppDataFilterInput
   ) {
-    deleteQuoteAppData(input: $input, condition: $condition) {
+    onDeleteQuoteAppData(filter: $filter) {
       id
       queryName
       quotesGenerated
       createdAt
       updatedAt
-      __typename
     }
   }
 `;
